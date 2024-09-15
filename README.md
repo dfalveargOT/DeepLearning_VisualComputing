@@ -85,12 +85,12 @@ This course covers:
     - **Recurrent Neural Networks**
     - **Image Classification using GRU-based Classifier**
 
-        ```math
-        r_t &= σ \left((\mathbf{W}_{ir}\mathbf{x}_t+\mathbf{b}_{ir}) + (\mathbf{W}_{hr}\mathbf{h}_{t - 1}+\mathbf{b}_{hr})\right) & \text{(reset gate)}\\
-        z_t &= σ \left((\mathbf{W}_{iz}\mathbf{x}_t+\mathbf{b}_{iz}) + (\mathbf{W}_{hz}\mathbf{h}_{t - 1}+\mathbf{b}_{hz})\right) & \text{(update gate)}\\
-        n_t &= tanh \left((\mathbf{W}_{in}\mathbf{x}_t+\mathbf{b}_{in}) + r_t \odot (\mathbf{W}_{hn}\mathbf{h}_{t - 1}+\mathbf{b}_{hn})\right) & \text{(new gate)}\\
-        h_t &= (1 - z_t) \odot n_t + z_t \odot h_{t - 1} & \text{(hidden state)}\\
-        ```
+        
+        $$r_t &= σ \left((\mathbf{W}_{ir}\mathbf{x}_t+\mathbf{b}_{ir}) + (\mathbf{W}_{hr}\mathbf{h}_{t - 1}+\mathbf{b}_{hr})\right) & \text{(reset gate)}$$
+        $$z_t &= σ \left((\mathbf{W}_{iz}\mathbf{x}_t+\mathbf{b}_{iz}) + (\mathbf{W}_{hz}\mathbf{h}_{t - 1}+\mathbf{b}_{hz})\right) & \text{(update gate)}$$
+        $$n_t &= tanh \left((\mathbf{W}_{in}\mathbf{x}_t+\mathbf{b}_{in}) + r_t \odot (\mathbf{W}_{hn}\mathbf{h}_{t - 1}+\mathbf{b}_{hn})\right) & \text{(new gate)}$$
+        $$h_t &= (1 - z_t) \odot n_t + z_t \odot h_{t - 1} & \text{(hidden state)}$$
+        
 
         ![arm](assets/3_GRU.png)
 
@@ -118,10 +118,9 @@ This course covers:
         
         Discriminator and Generator:
 
-        ```math
-        \mathcal{L}^\text{GAN}_G(\mathbf{z}) &= \mathbb{E}_{\mathbf{z} \sim p(\mathbf{z})}[\log(1 - D(G(\mathbf{z})))] \\
-        \mathcal{L}^\text{GAN}_D(\mathbf{x}) &= -\mathbb{E}_{\mathbf{x} \sim p(\mathbf{x})}[\log D(\mathbf{x})] - \mathbb{E}_{\mathbf{z} \sim p(\mathbf{z})}[\log(1 - D(G(\mathbf{z})))] \\
-        ```
+        
+        $$\mathcal{L}^\text{GAN}_G(\mathbf{z}) &= \mathbb{E}_{\mathbf{z} \sim p(\mathbf{z})}[\log(1 - D(G(\mathbf{z})))]$$
+        $$\mathcal{L}^\text{GAN}_D(\mathbf{x}) &= -\mathbb{E}_{\mathbf{x} \sim p(\mathbf{x})}[\log D(\mathbf{x})] - \mathbb{E}_{\mathbf{z} \sim p(\mathbf{z})}[\log(1 - D(G(\mathbf{z})))]$$
 
         ![arm](assets/4_GAN.png)
 
