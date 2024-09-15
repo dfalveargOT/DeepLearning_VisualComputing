@@ -26,10 +26,10 @@ This course covers:
 
 ## Projects:
 ## 1. [PyTorch and Deep Learning](projects/P1.David.Alvear.V1.ipynb)
-### **Regression**
+### 1.1 **Regression**
 - Gradient Descent
 - Torch optimizer
-### **Image Classification**
+### 1.2 **Image Classification**
 - Logistic Regression
 - Softmax and Cross-Entropy
 - Convolutional Neural Networks
@@ -62,30 +62,30 @@ This course covers:
 </tbody>
 </table>
 
-### **Video Classification**
+### 1.3 **Video Classification**
 - YouTube-8M Dataset
 - Classification using Video Features
-### **Vision Transformer - Pathchify Images**
+### 1.4 **Vision Transformer - Pathchify Images**
 
 ## 2. [Object Detection, Segmentation and Data augmentation](projects/P2.David.Alvear.V1.ipynb)
-### **Semantic Segmentation**
-### **U-Net, Seg-Net Based Implementation**
-### **FCN-8s and Finetunning**
-### **Object Detection and Localization YOLOv3**
+### 2.1 **Semantic Segmentation**
+### 2.2 **U-Net, Seg-Net Based Implementation**
+### 2.3 **FCN-8s and Finetunning**
+### 2.4 **Object Detection and Localization YOLOv3**
 
 <img src="assets/2_yolo1.png" alt="" width="450"/>
 
 <img src="assets/2_yolo2.png" alt="" width="450"/>
 
-### **Design Attention Blocks for Vision Transformer**
+### 2.5 **Design Attention Blocks for Vision Transformer**
 
 <img src="assets/2_transformers.png" alt="" width="450"/>
 
 ## 3. [Recurrent Neural Networks and Transformers](projects/P3.David.Alvear.V1.ipynb)
 
-### **Recurrent Neural Networks**
+### 3.1 **Recurrent Neural Networks**
 
-### **Image Classification using GRU-based Classifier**
+### 3.2 **Image Classification using GRU-based Classifier**
 
 $$r_t = \sigma\left((\mathbf{W}_{ir}\mathbf{x}_t+\mathbf{b}_{ir}) + (\mathbf{W}_{hr}\mathbf{h}_{t - 1}+\mathbf{b}_{hr})\right)  \text{ (reset gate)}$$
 $$z_t = \sigma\left((\mathbf{W}_{iz}\mathbf{x}_t+\mathbf{b}_{iz}) + (\mathbf{W}_{hz}\mathbf{h}_{t - 1}+\mathbf{b}_{hz})\right)  \text{ (update gate)}$$
@@ -94,7 +94,7 @@ $$h_t = (1 - z_t) \odot n_t + z_t \odot h_{t - 1}  \text{ (hidden state)}$$
 
 <img src="assets/3_GRU.png" alt="" width="450"/>
 
-### **Build a ViT Model for Image Classification**
+### 3.3 **Build a ViT Model for Image Classification**
 
 <img src="assets/3_VIT.png" alt="" width="450"/>
 
@@ -102,7 +102,7 @@ $$h_t = (1 - z_t) \odot n_t + z_t \odot h_{t - 1}  \text{ (hidden state)}$$
 
 $$p(\mathbf{x}, \mathbf{z}) = \overset{\text{encoder}}{\overbrace{p(\mathbf{z}|\mathbf{x})}}p(\mathbf{x}) = \overset{\text{decoder}}{\overbrace{p(\mathbf{x}|\mathbf{z})}}\underset{\text{prior}}{\underbrace{p(\mathbf{z})}}$$
 
-### **Variational Auto-Encoders**
+### 4.1 **Variational Auto-Encoders**
 
 Loss Function VAE:
 
@@ -111,7 +111,7 @@ $$\mathcal{L}_{\beta\text{-VAE}}(\mathbf{x}) = \overset{\text{reconstruction ter
 <img src="assets/4_VAE2.png" alt="" width="450"/>
 <img src="assets/4_VAE.png" alt="" width="450"/>
 
-### **Generative Adversarial Networks**
+### 4.2 **Generative Adversarial Networks**
 
 Min-Max problem:
 
@@ -119,12 +119,13 @@ $$\min_G \max_D \mathbb{E}_{\mathbf{x} \sim p(\mathbf{x})}[\log D(\mathbf{x})] +
 
 Discriminator and Generator:
 
-$$\mathcal{L}^\text{GAN}_G(\mathbf{z}) = \mathbb{E}_{\mathbf{z} \sim p(\mathbf{z})}[\log(1 - D(G(\mathbf{z})))]$$
-$$\mathcal{L}^\text{GAN}_D(\mathbf{x}) = -\mathbb{E}_{\mathbf{x} \sim p(\mathbf{x})}[\log D(\mathbf{x})] - \mathbb{E}_{\mathbf{z} \sim p(\mathbf{z})}[\log(1 - D(G(\mathbf{z})))]$$
+$$\mathcal{L}_{GAN_G}(z) = \mathbb{E}_{z \sim p(z)}[\log(1 - D(G(z)))]$$
+
+$$\mathcal{L}_{GAN_D}(x) = -\mathbb{E}_{x \sim p(x)}[\log D(x)] - \mathbb{E}_{z \sim p(z)}[\log(1 - D(G(z)))]$$
 
 <img src="assets/4_GAN.png" alt="" width="450"/>
 
-### **Adversarial Attacks**
+### 4.3 **Adversarial Attacks**
 
 <img src="assets/4_attacks.png" alt="" width="450"/>
 
@@ -134,13 +135,13 @@ $$\mathcal{L}^\text{GAN}_D(\mathbf{x}) = -\mathbb{E}_{\mathbf{x} \sim p(\mathbf{
 
 <img src="assets/5_3D_Representation.png" alt="" width="450"/>
 
-### **PointNet Implementation**
+### 5.2 **PointNet Implementation**
 
 <img src="assets/5_PointNet.png" alt="" width="450"/>
 <img src="assets/5_PointNet1.png" alt="" width="450"/>
 
-### **Graph Convolutional Networks - DGCNN**
+### 5.2 **Graph Convolutional Networks - DGCNN**
 
-### **Zero-shot Point Cloud Classification using CLIP**
+### 5.3 **Zero-shot Point Cloud Classification using CLIP**
 
 <img src="assets/5_CLIP.png" alt="" width="450"/>
