@@ -76,7 +76,8 @@ This course covers:
         ![arm](assets/2_yolo2.png)
 
     - **Design Attention Blocks for Vision Transformer**
-        <img src="assets/2_transformers.png" alt="" width="200"/>
+
+    <img src="assets/2_transformers.png" alt="" width="500"/>
 
 
 3. [Recurrent Neural Networks and Transformers](projects/P3.David.Alvear.V1.ipynb)
