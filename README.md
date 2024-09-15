@@ -76,7 +76,7 @@ This course covers:
         ![arm](assets/2_yolo2.png)
 
     - **Design Attention Blocks for Vision Transformer**
-        <!-- ![arm](assets/2_transformers.png) -->
+        ![arm](assets/2_transformers.png)
         <!-- <img src="assets/2_transformers.png" alt="" width="200"/> -->
 
 
@@ -84,7 +84,7 @@ This course covers:
 
     - **Recurrent Neural Networks**
     - **Image Classification using GRU-based Classifier**
-        
+
         $$\begin{align}
         r_t &= \sigma\left((\mathbf{W}_{ir}\mathbf{x}_t+\mathbf{b}_{ir}) + (\mathbf{W}_{hr}\mathbf{h}_{t - 1}+\mathbf{b}_{hr})\right) & \text{(reset gate)}\\
         z_t &= \sigma\left((\mathbf{W}_{iz}\mathbf{x}_t+\mathbf{b}_{iz}) + (\mathbf{W}_{hz}\mathbf{h}_{t - 1}+\mathbf{b}_{hz})\right) & \text{(update gate)}\\
