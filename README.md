@@ -76,23 +76,20 @@ This course covers:
         ![arm](assets/2_yolo2.png)
 
     - **Design Attention Blocks for Vision Transformer**
-
-    <img src="assets/2_transformers.png" alt="" width="500"/>
+        <!-- ![arm](assets/2_transformers.png) -->
+        <!-- <img src="assets/2_transformers.png" alt="" width="200"/> -->
 
 
 3. [Recurrent Neural Networks and Transformers](projects/P3.David.Alvear.V1.ipynb)
 
     - **Recurrent Neural Networks**
     - **Image Classification using GRU-based Classifier**
-
-        ```math
-        \begin{align}
+        $$\begin{align}
         r_t &= \sigma\left((\mathbf{W}_{ir}\mathbf{x}_t+\mathbf{b}_{ir}) + (\mathbf{W}_{hr}\mathbf{h}_{t - 1}+\mathbf{b}_{hr})\right) & \text{(reset gate)}\\
         z_t &= \sigma\left((\mathbf{W}_{iz}\mathbf{x}_t+\mathbf{b}_{iz}) + (\mathbf{W}_{hz}\mathbf{h}_{t - 1}+\mathbf{b}_{hz})\right) & \text{(update gate)}\\
         n_t &= \tanh\left((\mathbf{W}_{in}\mathbf{x}_t+\mathbf{b}_{in}) + r_t \odot (\mathbf{W}_{hn}\mathbf{h}_{t - 1}+\mathbf{b}_{hn})\right) & \text{(new gate)}\\
         h_t &= (1 - z_t) \odot n_t + z_t \odot h_{t - 1} & \text{(hidden state)}\\
-        \end{align}
-        ```
+        \end{align}$$
 
         ![arm](assets/3_GRU.png)
 
@@ -131,13 +128,17 @@ This course covers:
         ![arm](assets/4_attacks.png)
 
 5. [project](projects/P5.David.Alvear.V1.ipynb)
-    - 3D Representations
+
+    - **3D Representations**
         ![arm](assets/5_3D_Representation.png)
-    - PointNet Implementation
+
+    - **PointNet Implementation**
         ![arm](assets/5_PointNet.png)
         ![arm](assets/5_PointNet1.png)
-    - Graph Convolutional Networks - DGCNN
-    - Zero-shot Point Cloud Classification using CLIP
+
+    - **Graph Convolutional Networks - DGCNN**
+    
+    - **Zero-shot Point Cloud Classification using CLIP**
         ![arm](assets/5_CLIP.png)
         <!-- <img src="./images/your-image.png" alt="Alt Text" width="200"/> -->
 
