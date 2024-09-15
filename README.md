@@ -25,7 +25,7 @@ This course covers:
 - [Exploring 3D Deep Learning PointNet and DGCNN](paper_discussions/6_Exploring_3D_DeepLearning.pdf)
 
 ## Projects:
-## 1. [PyTorch and Deep Learning](projects/P1.David.Alvear.V1.ipynb) [PDF](projects/P1.David.Alvear.V1.pdf)
+## 1. [PyTorch and Deep Learning](projects/P1.David.Alvear.V1.ipynb) [[PDF](projects/P1.David.Alvear.V1.pdf)]
 ### 1.1 **Regression**
 - Gradient Descent
 - Torch optimizer
@@ -67,7 +67,7 @@ This course covers:
 - Classification using Video Features
 ### 1.4 **Vision Transformer - Pathchify Images**
 
-## 2. [Object Detection, Segmentation and Data augmentation](projects/P2.David.Alvear.V1.ipynb) [PDF](projects/P2.David.Alvear.V1.pdf)
+## 2. [Object Detection, Segmentation and Data augmentation](projects/P2.David.Alvear.V1.ipynb) [[PDF](projects/P2.David.Alvear.V1.pdf)]
 ### 2.1 **Semantic Segmentation**
 ### 2.2 **U-Net, Seg-Net Based Implementation**
 ### 2.3 **FCN-8s and Finetunning**
@@ -81,7 +81,7 @@ This course covers:
 
 <img src="assets/2_transformers.png" alt="" width="450"/>
 
-## 3. [Recurrent Neural Networks and Transformers](projects/P3.David.Alvear.V1.ipynb) [PDF](projects/P3.David.Alvear.V1.pdf)
+## 3. [Recurrent Neural Networks and Transformers](projects/P3.David.Alvear.V1.ipynb) [[PDF](projects/P3.David.Alvear.V1.pdf)]
 
 ### 3.1 **Recurrent Neural Networks**
 
@@ -98,7 +98,7 @@ $$h_t = (1 - z_t) \odot n_t + z_t \odot h_{t - 1}  \text{ (hidden state)}$$
 
 <img src="assets/3_VIT.png" alt="" width="450"/>
 
-## 4. [Generative Models](projects/P4.David.Alvear.V1.ipynb) [PDF](projects/P4.David.Alvear.V1.pdf)
+## 4. [Generative Models](projects/P4.David.Alvear.V1.ipynb) [[PDF](projects/P4.David.Alvear.V1.pdf)]
 
 $$p(\mathbf{x}, \mathbf{z}) = \overset{\text{encoder}}{\overbrace{p(\mathbf{z}|\mathbf{x})}}p(\mathbf{x}) = \overset{\text{decoder}}{\overbrace{p(\mathbf{x}|\mathbf{z})}}\underset{\text{prior}}{\underbrace{p(\mathbf{z})}}$$
 
@@ -129,7 +129,7 @@ $$\mathcal{L}_{GAN_D}(x) = -\mathbb{E}_{x \sim p(x)}[\log D(x)] - \mathbb{E}_{z 
 
 <img src="assets/4_attacks.png" alt="" width="450"/>
 
-## 5. [3D Deep Learning, PointNet, Zero-Shot prediction](projects/P5.David.Alvear.V1.ipynb) [PDF](projects/P5.David.Alvear.V1.pdf)
+## 5. [3D Deep Learning, PointNet, Zero-Shot prediction](projects/P5.David.Alvear.V1.ipynb) [[PDF](projects/P5.David.Alvear.V1.pdf)]
 
 ### **3D Representations**
 
