@@ -72,16 +72,21 @@ This course covers:
     - **U-Net, Seg-Net Based Implementation**
     - **FCN-8s and Finetunning**
     - **Object Detection and Localization YOLOv3**
+
         <img src="assets/2_yolo1.png" alt="" width="450"/>
+
         <img src="assets/2_yolo2.png" alt="" width="450"/>
 
     - **Design Attention Blocks for Vision Transformer**
+
         <img src="assets/2_transformers.png" alt="" width="450"/>
 
 3. [Recurrent Neural Networks and Transformers](projects/P3.David.Alvear.V1.ipynb)
 
     - **Recurrent Neural Networks**
+
     - **Image Classification using GRU-based Classifier**
+
         $$r_t = \sigma\left((\mathbf{W}_{ir}\mathbf{x}_t+\mathbf{b}_{ir}) + (\mathbf{W}_{hr}\mathbf{h}_{t - 1}+\mathbf{b}_{hr})\right)  \text{ (reset gate)}$$
         $$z_t = \sigma\left((\mathbf{W}_{iz}\mathbf{x}_t+\mathbf{b}_{iz}) + (\mathbf{W}_{hz}\mathbf{h}_{t - 1}+\mathbf{b}_{hz})\right)  \text{ (update gate)}$$
         $$n_t = \tanh\left((\mathbf{W}_{in}\mathbf{x}_t+\mathbf{b}_{in}) + r_t \odot (\mathbf{W}_{hn}\mathbf{h}_{t - 1}+\mathbf{b}_{hn})\right)  \text{ (new gate)}$$
@@ -90,6 +95,7 @@ This course covers:
         <img src="assets/3_GRU.png" alt="" width="450"/>
 
     - **Build a ViT Model for Image Classification**
+
         <img src="assets/3_VIT.png" alt="" width="450"/>
 
 4. [Generative Models](projects/P4.David.Alvear.V1.ipynb)
@@ -97,6 +103,7 @@ This course covers:
     $$p(\mathbf{x}, \mathbf{z}) = \overset{\text{encoder}}{\overbrace{p(\mathbf{z}|\mathbf{x})}}p(\mathbf{x}) = \overset{\text{decoder}}{\overbrace{p(\mathbf{x}|\mathbf{z})}}\underset{\text{prior}}{\underbrace{p(\mathbf{z})}}$$
 
     - **Variational Auto-Encoders**
+
         Loss Function VAE:
 
         $$\mathcal{L}_{\beta\text{-VAE}}(\mathbf{x}) = \overset{\text{reconstruction term}}{\overbrace{\underset{\mathbf{\hat{x}} \rightarrow \mathbf{x}}{\underbrace{\|\mathbf{\hat{x}} - \mathbf{x}\|_2^2}}}} + \beta \overset{\text{regularization term}}{\overbrace{\sum_i(\underset{\mathbf{\mu} \rightarrow \mathbf{0}}{\underbrace{\mathbf{\mu}^2}} + \underset{\mathbf{\sigma^2} \rightarrow \mathbf{1}}{\underbrace{\mathbf{\sigma}^2 - \log \mathbf{\sigma}^2 - \mathbf{1}}})_i}}$$
@@ -105,6 +112,7 @@ This course covers:
         <img src="assets/4_VAE.png" alt="" width="450"/>
 
     - **Generative Adversarial Networks**
+
         Min-Max problem:
 
         $$\min_G \max_D \mathbb{E}_{\mathbf{x} \sim p(\mathbf{x})}[\log D(\mathbf{x})] + \mathbb{E}_{\mathbf{z} \sim p(\mathbf{z})}[\log(1 - D(G(\mathbf{z})))]$$
@@ -117,18 +125,22 @@ This course covers:
         <img src="assets/4_GAN.png" alt="" width="450"/>
 
     - **Adversarial Attacks**
+
         <img src="assets/4_attacks.png" alt="" width="450"/>
 
 5. [3D Deep Learning, PointNet, Zero-Shot prediction](projects/P5.David.Alvear.V1.ipynb)
 
     - **3D Representations**
+
         <img src="assets/5_3D_Representation.png" alt="" width="450"/>
 
     - **PointNet Implementation**
+
         <img src="assets/5_PointNet.png" alt="" width="450"/>
         <img src="assets/5_PointNet1.png" alt="" width="450"/>
 
     - **Graph Convolutional Networks - DGCNN**
 
     - **Zero-shot Point Cloud Classification using CLIP**
+
         <img src="assets/5_CLIP.png" alt="" width="450"/>
