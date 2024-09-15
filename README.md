@@ -86,9 +86,9 @@ This course covers:
     - **Image Classification using GRU-based Classifier**
 
         $$\begin{align}
-        r_t &= \sigma\left((\mathbf{W}_{ir}\mathbf{x}_t+\mathbf{b}_{ir}) + (\mathbf{W}_{hr}\mathbf{h}_{t - 1}+\mathbf{b}_{hr})\right) & \text{(reset gate)}\\
-        z_t &= \sigma\left((\mathbf{W}_{iz}\mathbf{x}_t+\mathbf{b}_{iz}) + (\mathbf{W}_{hz}\mathbf{h}_{t - 1}+\mathbf{b}_{hz})\right) & \text{(update gate)}\\
-        n_t &= \tanh\left((\mathbf{W}_{in}\mathbf{x}_t+\mathbf{b}_{in}) + r_t \odot (\mathbf{W}_{hn}\mathbf{h}_{t - 1}+\mathbf{b}_{hn})\right) & \text{(new gate)}\\
+        r_t &= σ \left((\mathbf{W}_{ir}\mathbf{x}_t+\mathbf{b}_{ir}) + (\mathbf{W}_{hr}\mathbf{h}_{t - 1}+\mathbf{b}_{hr})\right) & \text{(reset gate)}\\
+        z_t &= σ \left((\mathbf{W}_{iz}\mathbf{x}_t+\mathbf{b}_{iz}) + (\mathbf{W}_{hz}\mathbf{h}_{t - 1}+\mathbf{b}_{hz})\right) & \text{(update gate)}\\
+        n_t &= tanh \left((\mathbf{W}_{in}\mathbf{x}_t+\mathbf{b}_{in}) + r_t \odot (\mathbf{W}_{hn}\mathbf{h}_{t - 1}+\mathbf{b}_{hn})\right) & \text{(new gate)}\\
         h_t &= (1 - z_t) \odot n_t + z_t \odot h_{t - 1} & \text{(hidden state)}\\
         \end{align}$$
 
