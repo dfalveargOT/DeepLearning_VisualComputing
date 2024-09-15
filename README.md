@@ -84,6 +84,7 @@ This course covers:
 
     - **Recurrent Neural Networks**
     - **Image Classification using GRU-based Classifier**
+        
         $$\begin{align}
         r_t &= \sigma\left((\mathbf{W}_{ir}\mathbf{x}_t+\mathbf{b}_{ir}) + (\mathbf{W}_{hr}\mathbf{h}_{t - 1}+\mathbf{b}_{hr})\right) & \text{(reset gate)}\\
         z_t &= \sigma\left((\mathbf{W}_{iz}\mathbf{x}_t+\mathbf{b}_{iz}) + (\mathbf{W}_{hz}\mathbf{h}_{t - 1}+\mathbf{b}_{hz})\right) & \text{(update gate)}\\
@@ -137,7 +138,7 @@ This course covers:
         ![arm](assets/5_PointNet1.png)
 
     - **Graph Convolutional Networks - DGCNN**
-    
+
     - **Zero-shot Point Cloud Classification using CLIP**
         ![arm](assets/5_CLIP.png)
         <!-- <img src="./images/your-image.png" alt="Alt Text" width="200"/> -->
