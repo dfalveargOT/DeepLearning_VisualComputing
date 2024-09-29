@@ -2,6 +2,8 @@
 
 This repository contains coursework and projects from the **Deep Learning in Visual Computing** course. The course provides a comprehensive overview of deep learning applications in visual computing, including foundational concepts and practical implementations. 
 
+Professor Bernard Ghanem
+
 ## Course Overview
 
 This course covers:
